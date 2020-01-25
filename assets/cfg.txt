@@ -1,0 +1,2 @@
+lang:zh_CN
+database:assets/data.txt
