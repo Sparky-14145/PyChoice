@@ -24,7 +24,7 @@ def connect(address):
 
 def sample(num = 1):
     if num < 0 or num > len(index):
-        raise IndexError(str_def.get_lang("no_enough_students"))
+        return [str_def.get_lang("no_enough_students")]
     else:
         return random.sample(index, num)
 

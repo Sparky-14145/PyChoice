@@ -7,11 +7,11 @@ import tkinter, connection, str_def, tkinter.font
 
 win = tkinter.Tk()
 win.title("PyChoice")
-win.geometry("480x500")
+win.geometry("500x500")
 
-ft1 = tkinter.font.Font(size=20)
+ft1 = tkinter.font.Font(size=26)
 
-text = tkinter.Text(win, width=30, height=10, font=ft1)
+text = tkinter.Text(win, width=25, height=8, font=ft1)
 str = str_def.get_lang("hello")
 text.insert(tkinter.INSERT, str)
 text.grid(row=0, column=0, columnspan=4)
@@ -29,7 +29,7 @@ button.grid(row=2, column=0)
 # button.pack(side=tkinter.BOTTOM, anchor=tkinter.W)
 
 num_txt = tkinter.Variable()
-entry = tkinter.Entry(win, textvariable=num_txt, font=tkinter.font.Font(size=30))
+entry = tkinter.Entry(win, textvariable=num_txt, font=ft1, width=25)
 num_txt.set(str_def.get_lang("mount_init"))
 entry.grid(row=1, column=0)
 # entry.pack(side=tkinter.TOP)

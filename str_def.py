@@ -10,7 +10,6 @@ with open("assets/cfg.txt", "r") as file:
         if not i: break
         k, v = i.replace('\n', '').split(':')
         settings[k] = v
-        print(i)
 with open("assets/" + settings["lang"] + ".txt", "r") as file:
     for i in file:
         if not i: break

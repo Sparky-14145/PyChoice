@@ -1,4 +1,4 @@
-hello:欢迎使用 PyChoice，请点击下方按钮！
+hello:欢迎使用 PyChoice，请在下方文本框内输入人数后点击下方“抽样”按钮！
 action:抽样！
 mount_init:抽取人数
 no_enough_students:错误——没有那么多学生！
