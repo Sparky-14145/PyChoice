@@ -1,15 +1,15 @@
-"""
+'''
 connection.py
 Connect to a database and return samples at random.
 
 First Edition:
 Just read strings from a txt file, default file is "assets/data.txt".
-"""
+'''
 
 import random, str_def
 
 with open(str_def.get_setting("database"), "r") as file:
-    index = [i for i in file]
+    index = [i.replace("\n", "") for i in file]
 
 def connect(address):
     '''
